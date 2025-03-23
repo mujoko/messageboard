@@ -1,0 +1,14 @@
+<h1>Message board homepage</h1>
+
+<table>
+    <tr>
+      <th>Author</th>
+      <th>Text</th>
+    </tr>
+    {% for post in post_list %}
+    <tr>
+      <td>{{ post.author }}</td>
+      <td>{{ post.text }}</td>
+    </tr>
+    {% endfor %}
+  </table>
